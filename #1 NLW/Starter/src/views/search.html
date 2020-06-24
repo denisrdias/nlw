@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    <title>{{ title }}</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="./assets/css/search-results.css"/>
+{% endblock styles %}
+
+{% set pageId = "page-search-results" %}
+
+{% block content %}
+
+    {% include "partials/page-header.html" %}
+
+    <main>
+        <h4>
+            <strong>2 pontos</strong>
+            encontrados</h4>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://cdn4.ecycle.com.br/cache/images/guia_da_reciclagem/50-750-logoreciclagem-750.jpg" alt="Colectoria"/>
+                <h1>Colectoria</h1>
+                <h3>Resíduos eletrônicos, Lâmpadas</h3>
+                <p>
+                    Cidade, Estado
+                    <br/>
+                    Endereço
+                    <br/>
+                    Número
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn4.ecycle.com.br/cache/images/guia_da_reciclagem/50-750-logoreciclagem-750.jpg" alt="Papersider"/>
+                <h1>Papersider</h1>
+                <h3>Resíduos eletrônicos, Lâmpadas</h3>
+                <p>
+                    Cidade, Estado
+                    <br/>
+                    Endereço
+                    <br/>
+                    Número
+                </p>
+            </div>
+        </div>
+    </main>
+{% endblock content %}

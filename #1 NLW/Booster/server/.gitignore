@@ -1,0 +1,11 @@
+node_modules/
+yarn.lock
+package-lock.json
+
+.env
+
+src/database/*.sqlite
+src/database/database.sqlite-journal
+
+uploads/points/*.png
+uploads/points/*.jpg
